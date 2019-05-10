@@ -1,0 +1,41 @@
+%\title{Letter Template}
+%
+% See http://texblog.org/2013/11/11/latexs-alternative-letter-class-newlfm/
+% and http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
+% for more information.
+%
+\documentclass[12pt,stdletter,orderfromtodate,sigleft]{newlfm}
+\usepackage{blindtext, xfrac}
+ 
+\newlfmP{dateskipbefore=50pt}
+\newlfmP{sigsize=50pt}
+\newlfmP{sigskipbefore=50pt}
+ 
+\newlfmP{Headlinewd=0pt,Footlinewd=0pt}
+ 
+\namefrom{Traffic Impact Analysis Team (57313)}
+\addrfrom{%
+    Team 57313\\
+    Mathmodelingland, WA
+}
+  
+\addrto{%
+    Jay Inslee\\
+    Office of the Governor\\
+    PO Box 40002 \\
+    Olympia, WA 98504-0002
+}
+ 
+\dateset{\today}
+ 
+\greetto{Dear Governor Inslee,}
+ 
+\closeline{Best,}
+ 
+\begin{document}
+\begin{newlfm}
+
+\input{tex/content.tex}
+
+\end{newlfm}
+\end{document}
